@@ -1,16 +1,19 @@
 {
     "manufacturer": "Ergonautes",
+    "keyboard_name": "Quacken Flex",
     "url": "https://github.com/Nuclear-Squid/Quacken",
-    "usb": {
-        "pid": "0x4653",
-        "suspend_wakeup_delay": 200,
-        "device_version": "1.0.0"
-    },
     "processor": "RP2040",
     "bootloader": "rp2040",
     "features": {
         "bootmagic": true,
-        "mousekey": true
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x4653",
+        "vid": "0xFEED"
     },
     "matrix_pins": {
         "direct":[
